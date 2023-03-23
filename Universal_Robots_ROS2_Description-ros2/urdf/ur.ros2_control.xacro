@@ -12,7 +12,7 @@
     use_tool_communication:=false
     script_filename output_recipe_filename
     input_recipe_filename tf_prefix
-    hash_kinematics robot_ip
+    hash_kinematics robot_ip:=192.168.1.128
     tool_voltage:=0 tool_parity:=0 tool_baud_rate:=115200 tool_stop_bits:=1
     tool_rx_idle_chars:=1.5 tool_tx_idle_chars:=3.5 tool_device_name:=/tmp/ttyUR tool_tcp_port:=54321
     reverse_port:=50001

@@ -1,10 +1,25 @@
 moveit_setup_assistant_config:
   urdf:
     package: ur_description
-    relative_path: urdf/ur3.urdf.xacro
+    relative_path: urdf/ur3e_robotiq85_gripper.urdf.xacro
   srdf:
-    relative_path: config/ur3.srdf
+    relative_path: config/ur3e.srdf
   package_settings:
-    author_name: khalil
-    author_email: khalial@gmail.com
-    generated_timestamp: 1677771465
+    author_name: khalil kahlaoui
+    author_email: khalil.kahlaoui@upm.es
+    generated_timestamp: 1678791610
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
